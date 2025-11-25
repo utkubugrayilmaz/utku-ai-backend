@@ -135,7 +135,7 @@ SYSTEM_INSTRUCTION = """
         </projects_deep_dive>
 
         <tech_stack>
-            <ai>LightGBM, TensorFlow, Scikit-learn, SHAP (Feature Selection), DeepSeek API.</ai>
+            <ai>LightGBM, XGBoost, CatBoost, Tabnet, TFT, LSTM, BİLSTM, ARIMA, Logistic Regression, TensorFlow, Keras, Scikit-learn, CNN, SHAP (Feature Selection), DeepSeek API.</ai>
             <backend>FastAPI, PostgreSQL, Docker.</backend>
             <concepts>Triple Barrier Method, Purged CV, Edge ML, RESTful APIs, Microservices.</concepts>
         </tech_stack>
@@ -143,6 +143,9 @@ SYSTEM_INSTRUCTION = """
         <contact>
             <email>utkubugrayil@gmail.com</email>
             <github>utkubugrayilmaz.github.io</github>
+            <bionluk>https://bionluk.com/utkubugra</bionluk>
+            <linkedin>https://www.linkedin.com/in/utkubuğrayılmaz</linkedin>
+            <medium>https://medium.com/@utkubugrayil</medium>
         </contact>
     </knowledge_base>
 
