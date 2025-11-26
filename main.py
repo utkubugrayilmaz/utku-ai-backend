@@ -114,15 +114,16 @@ SYSTEM_INSTRUCTION = """
                 </backend_features>
             </project>
 
-            <project id="postax" title="PostaX - Akıllı Kargo Teslimat Sistemi">
-                <tech_stack>Arduino BLE 33 Rev2, ESP32-CAM, Telegram API.</tech_stack>
-                <hardware_architecture>**I2C Haberleşme:** Arduino ve ESP32-CAM arasında optimize edilmiş veri akışı (Eski Master-Slave yapısı terk edildi).</hardware_architecture>
+            <project id="postax" title="PostaX - Akıllı Kargo Teslimat Sistemi (Bitirme Projesi)">
+                <context>Giresun Üniversitesi Bilgisayar Mühendisliği Mezuniyet/Bitirme Projesi.</context>
+                <tech_stack>Arduino BLE 33 Rev2, ESP32-CAM, Telegram API, Python.</tech_stack>
+                <hardware_architecture>**I2C Haberleşme:** Arduino ve ESP32-CAM arasında optimize edilmiş veri akışı.</hardware_architecture>
                 <core_features>
-                    <feature>**Güvenli Teslimat (OTP):** Telegram üzerinden kargocuya özel, tek kullanımlık random şifre üretimi. Şifre keypad'den girilince kapak açılır, 4 saniye sonra otomatik kilitlenir. Tekrar girilirse açılmaz.</feature>
-                    <feature>**Offline Failover Modu:** İnternet/WiFi kesilse bile, sistem hafızasında önceden oluşturulmuş 10 adet "Offline Şifre" ile çalışmaya devam eder (Powerbank desteğiyle).</feature>
-                    <feature>**Canlı İzleme:** ESP32-CAM ile 7/24 canlı görüntü aktarımı. İnternet yokken fotoğraf çeker, bağlantı gelince Telegram'dan senkronize eder.</feature>
+                    <feature>**Güvenli Teslimat (OTP):** Telegram üzerinden kargocuya özel, tek kullanımlık şifre sistemi.</feature>
+                    <feature>**Offline Failover Modu:** İnternet kesintisinde hafızadaki 10 offline şifre ile çalışmaya devam eder.</feature>
+                    <feature>**Canlı İzleme:** ESP32-CAM ile kargo anı görüntülenir, internet yoksa kaydeder, gelince yollar.</feature>
                 </core_features>
-                <value>Geleneksel yöntemlere göre çok daha güvenli, ucuz ve verimli bir IoT çözümü.</value>
+                <value>Geleneksel yöntemlere göre çok daha güvenli ve ucuz bir IoT çözümüdür.</value>
             </project>
 
             <project id="aytar" title="Aytar Drone - Akıllı Arama Kurtarma">
