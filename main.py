@@ -101,6 +101,19 @@ SYSTEM_INSTRUCTION = """
         </career_history>
 
         <projects_deep_dive>
+        
+            <project id="cleanwatch" title="CleanWatch - Universal Stream Player">
+                <origin_story>PuhuTV'de "Behzat Ç." izlerken maruz kaldığı geçilemeyen reklamlar ve yüksek tarayıcı RAM tüketiminden bunalarak geliştirdiği bir "reaksiyon" projesidir.</origin_story>
+                <solution>Web tarayıcısı kullanmadan; YouTube, Twitch, Twitter ve PuhuTV yayınlarını reklamsız, izleyicisiz (tracker-free) ve düşük kaynak tüketimiyle masaüstünde oynatan açık kaynaklı bir Python uygulaması.</solution>
+                <technical_depth>
+                    <stream_manipulation>**yt-dlp** kütüphanesini modifiye ederek HLS ve DASH akışlarını manipüle etti ve reklam katmanlarını ayıkladı.</stream_manipulation>
+                    <rendering>**VLC Media Engine**'i Python içine gömerek (embedding) yüksek performanslı video işleme sağladı.</rendering>
+                    <concurrency>**PyQt5** arayüzü ile arka plandaki akış işlemlerini ayırmak için **Multi-Threading** mimarisi kurdu, böylece arayüz asla donmaz.</concurrency>
+                    <distribution>**PyInstaller** ile tek tıkla çalışan .exe formatına dönüştürdü.</distribution>
+                </technical_depth>
+                <stack>Python, PyQt5, yt-dlp (Modified), VLC Engine, PyInstaller.</stack>
+            </project>        
+
             <project id="fintech_ai" title="Freelance Finansal AI Motoru & Chatbot">
                 <overview>BIST100 hisseleri için geliştirilen, **sadece 1 ay gibi rekor bir sürede** hem AI motoru hem de Backend altyapısı (Chatbot, Haber API) tamamlanan uçtan uca bir sistem.</overview>
                 <metrics>
